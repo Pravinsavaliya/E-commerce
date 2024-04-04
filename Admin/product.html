@@ -187,7 +187,7 @@
             <a href="index3.html" class="brand-link">
                 <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
                     style="opacity: .8">
-                <span class="brand-text font-weight-light">AdminLTE 3</span>
+                <span class="brand-text font-weight-light">Admin</span>
             </a>
 
             <!-- Sidebar -->
@@ -195,8 +195,7 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img src="./img/download.png"
-                            class="img-circle elevation-2" alt="User Image">
+                        <img src="./img/download.png" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
                         <a href="#" class="d-block">Kushal</a>
@@ -292,48 +291,34 @@
                                     <div class="card-body">
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Category</label>
-                                            <select
-                                             name="catid" 
-                                             id="catid" 
-                                             class="form-control">
+                                            <select name="catid" id="catid" class="form-control">
                                             </select>
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Product name</label>
-                                            <input
-                                             type="text"
-                                             class="form-control"
-                                              name="name" 
-                                              id="name" 
-                                              />
-                                            
+                                            <input type="text" class="form-control" name="prname" id="prname" />
+
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Product Price</label>
-                                            <input 
-                                             type="text"
-                                             class="form-control"
-                                             name="price"
-                                              id="price" 
-                                             />
+                                            <input type="text" class="form-control" name="price" id="price" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Dscription</label>
+                                            <input type="text" class="form-control" name="dsc" id="dsc" />
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">image:</label>
-                                            <input 
-                                            type="file"
-                                             name="image" 
-                                             id="image" 
-                                             onchange="displayImage(event)"
-                                             />
-                                             <img src="" alt="" name="img" id="img" width="200px" height="150px"/>
+                                            <input type="file" name="image" id="image" onchange="displayImage(event)" />
+                                            <img src="" alt="" name="primgage" id="preview" width="200px" height="150px" />
                                         </div>
 
                                     </div>
                                     <!-- /.card-body -->
 
                                     <div class="card-footer">
-                                        <button type="button" class="btn btn-primary"
-                                            onclick="return addProduct()">Save Product</button>
+                                        <button type="button" class="btn btn-primary" onclick="return addProduct()">Save
+                                            Product</button>
                                     </div>
                                 </form>
                             </div>
@@ -352,8 +337,10 @@
                                                 <th>Category name</th>
                                                 <th>Product name</th>
                                                 <th>price</th>
+                                                <th>Dscription</th>
                                                 <th>Image</th>
                                                 <th>Action</th>
+
 
                                             </tr>
                                         </thead>
@@ -434,7 +421,7 @@
     <!-- <script src="dist/js/pages/dashboard.js"></script> -->
 
 
-    <script src="Product.js"></script>
+    <script src="./dist/js/product.js"></script>
 </body>
 
 </html>

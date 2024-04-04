@@ -187,7 +187,7 @@
             <a href="index3.html" class="brand-link">
                 <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
                     style="opacity: .8">
-                <span class="brand-text font-weight-light">AdminLTE 3</span>
+                <span class="brand-text font-weight-light ">Admin</span>
             </a>
 
             <!-- Sidebar -->
@@ -286,12 +286,12 @@
                                 </div>
                                 <!-- /.card-header -->
                                 <!-- form start -->
-                                <form name="catfrm">
+                                <form name="catfrm" action="#" method="post">
                                     <input type="hidden" name="catid">
                                     <div class="card-body">
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Category</label>
-                                            <input type="text" name="kname" class="form-control" id="kname"
+                                            <input type="text" name="iptName" class="form-control" id="catName"
                                                 placeholder="Category Name:">
                                         </div>
                                     </div>
@@ -299,7 +299,7 @@
 
                                     <div class="card-footer">
                                         <button type="button" class="btn btn-primary"
-                                            onclick="return addcat()">Save</button>
+                                            onclick="disData()">Add Category</button>
                                     </div>
                                 </form>
                             </div>
@@ -320,7 +320,7 @@
 
                                             </tr>
                                         </thead>
-                                        <tbody id="allCatData">
+                                        <tbody id="dispData">
 
 
                                         </tbody>
@@ -397,7 +397,7 @@
     <!-- <script src="dist/js/pages/dashboard.js"></script> -->
 
 
-    <script src="category.js"></script>
+    <script src="./dist/js/ctegory.js"></script>
 </body>
 
 </html>
